@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag2_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/sixteen"
+    tools:context=".EditorActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/eight">
+
+                <LinearLayout
+                    android:id="@+id/activity_editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/LinearStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/TextFieldStyle"
+                            android:text="@string/item_name" />
+
+                        <EditText
+                            android:id="@+id/product_name"
+                            style="@style/EditorFieldStyle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <TextView
+                            style="@style/TextFieldStyle"
+                            android:text="@string/item_price" />
+
+                        <EditText
+                            android:id="@+id/product_price"
+                            style="@style/EditorFieldStyle"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/ten"
+                        android:paddingTop="@dimen/ten">
+
+                        <TextView
+                            style="@style/TextFieldStyle"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/item_quantity" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+
+                            <Button
+                                android:id="@+id/plus"
+                                android:layout_width="@dimen/fifty"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/round_button"
+                                android:text="@string/plus"
+                                android:textColor="@color/white"
+                                android:textSize="25sp" />
+
+                            <EditText
+                                android:id="@+id/item_quantity"
+                                android:layout_width="@dimen/hundred"
+                                android:layout_height="wrap_content"
+                                android:hint="0"
+                                android:inputType="number"
+                                android:textAlignment="center" />
+
+                            <Button
+                                android:id="@+id/minus"
+                                android:layout_width="@dimen/fifty"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/round_button"
+                                android:text="@string/minus"
+                                android:textColor="@color/white"
+                                android:textSize="25sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <TextView
+                            style="@style/TextFieldStyle"
+                            android:text="@string/supplier_name" />
+
+                        <EditText
+                            android:id="@+id/supplier_name"
+                            style="@style/EditorFieldStyle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <TextView
+                            style="@style/TextFieldStyle"
+                            android:text="@string/supplier_phone" />
+
+                        <EditText
+                            android:id="@+id/supplier_phone"
+                            style="@style/EditorFieldStyle"
+                            android:inputType="phone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <TextView
+                            style="@style/TextFieldStyle"
+                            android:text="@string/supplier_email" />
+
+                        <EditText
+                            android:id="@+id/supplier_email"
+                            style="@style/EditorFieldStyle"
+                            android:inputType="textEmailAddress" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <TextView
+                            android:layout_width="@dimen/hundred"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/eight"
+                            android:text="@string/image"
+                            android:textColor="@color/black" />
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/add_image_button"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="@dimen/sixteen"
+                            android:src="@drawable/pictures"
+                            app:fabSize="normal" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/product_image"
+                        android:layout_width="@dimen/hundredfifty"
+                        android:layout_height="@dimen/hundredfifty"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/eight" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+
+
